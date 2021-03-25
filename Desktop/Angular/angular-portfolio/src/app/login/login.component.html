@@ -1,0 +1,23 @@
+<div class="bod">
+ <div class="heading"> <p> Amazing Portfolio </p></div>
+ <div  class="form">
+    <!-- <p>THIS IS MY LOGIN </p> -->
+    <!-- form starts below-->
+    <div class="mb-3">
+    <form #login = "ngForm"  (ngSubmit)="logUser(login.value)" style="align-content: center;">
+        <label>Username : </label> <br />
+        <input  class="form-control" type="text" name="user" placeholder="@username" ngModel> <br />
+        <label>Password : </label> <br />
+        <input class="form-control" type="password" name="pass" placeholder="@password" ngModel><br />
+
+<br />
+        <input type="submit" class="btn alert-danger" name="login" value="Log In" >
+        <br />  <br />  <br />
+        <p>Don't have an account ?  <a style="text-decoration: none;" routerLink="/signup">   &nbsp;&nbsp; Register Here ! </a></p>
+    </form>
+    </div>
+   <div class="">  {{msg}} </div>
+ 
+</div>
+
+</div>

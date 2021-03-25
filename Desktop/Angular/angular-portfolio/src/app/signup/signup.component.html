@@ -1,0 +1,42 @@
+<div class="bod">
+   
+<div class="heading"> <p> Sign Up for fun ! </p> </div>
+    <!-- form starts below-->
+    <div  class="form">
+    <div class="mb-3">
+    <form #signup = "ngForm"  (ngSubmit)="signUp(signup.value)" style="align-content: center;">
+        <label>First Name :</label> <br />
+        <input  class="form-control" type="text" name="fname" placeholder="@First Name"  ngModel  required/> <br />
+        <label>Last Name :</label> <br />
+        <input class="form-control" type="text" name="lname" placeholder="@Last Name"  ngModel  required/> <br />
+        <label>Username :</label> <br />
+        <input class="form-control" type="text" name="user" placeholder="@username"  ngModel  required/> <br />
+        <label>Password : </label> <br />
+        <input class="form-control" type="password" name="pass" placeholder="@password"  ngModel required/><br />
+
+<br />
+        <input type="submit"  class="btn alert-danger" name="login" value="Register" >
+  
+  
+        <!--
+
+<p>Don't have an account ?  <a style="text-decoration: none;" routerLink="/signup">   &nbsp;&nbsp; Register Here ! </a></p>
+<div class="">  {{msg}} </div>
+        -->
+    </form>
+    </div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+  
+         
+       
+           
+      

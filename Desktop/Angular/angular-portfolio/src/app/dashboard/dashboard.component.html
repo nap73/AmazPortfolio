@@ -1,0 +1,60 @@
+
+<div class="container">
+
+    <p style="color: indianred;">{{dateTime}}</p>
+    <div class="bod">
+
+        <div class="heading"> <p> welcome  :   {{userlogin}} </p></div>
+        <div  class="form">
+          
+        <form #dash = "ngForm" style="align-content: center;">
+        <p>Add you Portfolio Contacts Here : </p> <br />
+            <div class="form-row">
+                        <div class="col">
+                            <input   class="form-control" type="text" name="name" placeholder="@name" ngModel> 
+                        </div>
+                        <div class="col">
+                            <input  class="form-control" type="text" name="contact" placeholder="@contact" ngModel><br />
+                        </div>
+            </div>
+        <br />
+        <input  class="btn alert-danger"  type="button" name="Add" value="Add Contact"   (click)="addValue(dash.value)" >
+      
+    </form>
+   
+        </div>
+        <hr />
+
+</div>
+<hr />
+<!-- <div class="tableclass">  -->
+
+<div class="table1">
+<table border="1px" id="details" class="table">
+    <thead>
+        <tr>
+            <th style="color: indianred;">Name</th>
+            <th style="color: indianred;">Contact</th>
+       </tr>
+    </thead>
+   <tbody>
+
+   </tbody>
+</table>
+<hr />
+
+</div>
+
+</div> 
+
+
+
+
+
+
+
+
+
+
+   
+  

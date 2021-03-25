@@ -1,0 +1,37 @@
+.form{
+    
+    /* margin-left: 250px;
+    margin-top: 200px;*/
+    margin-left: 250px;
+    padding-top: 60px; 
+    width: 300px;
+    height: 300px;
+    position:fixed;
+
+}
+.heading {
+
+  text-align: center;
+  padding-top: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+  color:indianred;
+
+}
+
+a{
+    color:indianred;
+}
+
+.bod{
+     /* border : 1px solid black; */
+  
+     border : 1px  indianred;
+    margin : auto ; 
+    margin-left: 400px;
+    margin-top: 100px;
+    width: 50%;
+    height: 700px;
+   background-color:rgb(251, 246, 246);
+   border-radius:  30px;
+}
