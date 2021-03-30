@@ -1,0 +1,64 @@
+<div class="top">
+    
+        <mat-toolbar class="toolBar">
+        <span style="text-align: center;">MY TASK PLANNER   --   1972519 </span>
+        </mat-toolbar>
+    
+
+ <form #taskRef="ngForm" (ngSubmit)="store(taskRef.value)">
+     
+        <mat-form-field>
+            <mat-label>Task Id</mat-label>
+            <input matInput type="number" name="id" ngModel/> 
+        </mat-form-field>
+        <br />
+    
+        <mat-form-field>
+            <mat-label>Task Name</mat-label>
+            <input matInput type="text" name="taskname" ngModel/> <br />
+        </mat-form-field>
+        <br />
+    
+        <mat-form-field>
+            <mat-label>Employee Name</mat-label>
+            <input matInput type="text" name="empname" ngModel/> <br />
+        </mat-form-field>
+        <br />
+
+        <mat-form-field>
+            <mat-label>Deadline</mat-label>
+            <input matInput type="date" name="deadline" ngModel/> <br />
+        </mat-form-field>
+         <br />
+        <br />
+    
+        <button mat-stroked-button color="primary"  type="submit">Store Task !</button> 
+     
+    
+</form>
+</div>
+<form>
+
+    <button id="view" mat-stroked-button color="primary" (click) = "restore()" type="submit">View All Tasks ! </button>
+
+</form>
+
+<hr />
+
+
+<table id="tasktable" class="table table-bordered">
+  
+    <thead class="thead-light">
+      <tr class="head">
+        <th scope="row">Task Id</th>
+        <th scope="row">Task Name</th>
+        <th scope="row">Employee Assigned</th>
+        <th scope="row">Deadline</th>
+    </tr>
+   </thead>
+<tbody>
+</tbody>
+</table>
+
+<script src="task-planner.service.ts"></script>
+

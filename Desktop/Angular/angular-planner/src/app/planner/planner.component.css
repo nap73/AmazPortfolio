@@ -1,0 +1,28 @@
+.top{
+    width : 400px;
+    height: 400px;
+    margin-top :  100px;
+    margin-left:  600px;
+   
+
+}
+
+.toolBar {
+    background-color: rgb(253, 212, 218);
+}
+
+#tasktable{
+    
+    width : 700px ;
+    margin-left:  500px;
+  
+
+}
+.head{
+    background-color: rgb(253, 212, 218);
+}
+
+#view{
+    margin-left: 600px;
+}
+
